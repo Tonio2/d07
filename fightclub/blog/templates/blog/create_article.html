@@ -1,0 +1,16 @@
+{% extends "blog/base.html" %}
+
+{% block content %}
+
+{% if form.errors %}
+<p>{{ form.errors }}</p>
+{% endif %}
+
+<form method="post" action="{% url 'blog:create' %}">
+  {% csrf_token %}
+  {{ form }}
+
+  <input type="submit" value="Create Article">
+</form>
+
+{% endblock %}

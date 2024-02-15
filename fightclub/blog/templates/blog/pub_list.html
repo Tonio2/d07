@@ -1,0 +1,22 @@
+{% extends "blog/base.html" %}
+
+{% block content %}
+<table>
+    <tr>
+        <th>Title</th>
+        <th>Synopsis</th>
+        <th>At</th>
+        <th>Link</th>
+    </tr>
+    {% for a in article_list %}
+    <tr>
+        <td>{{ a.title }}</td>
+        <td>{{ a.synopsis }}</td>
+        <td>{{ a.created }}</td>
+        <td><a href="{% url 'blog:article' a.id %}">See</a></td>
+    </tr>
+    {% endfor %}
+</table>
+
+<a href="{% url 'blog:create' %}"><button>+ New Article</button></a>
+{% endblock %}

@@ -1,0 +1,68 @@
+[
+{
+  "model": "blog.article",
+  "pk": 1,
+  "fields": {
+    "title": "Sample Title",
+    "author": 1,
+    "created": "2024-02-13T22:29:20.423Z",
+    "synopsis": "Sample synopsis",
+    "content": "Sample content"
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 2,
+  "fields": {
+    "title": "New article",
+    "author": 1,
+    "created": "2024-02-13T22:35:55.508Z",
+    "synopsis": "bla bla bla",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 3,
+  "fields": {
+    "title": "Another one bites the dust",
+    "author": 3,
+    "created": "2024-02-13T22:37:45.403Z",
+    "synopsis": "Chanson de Queen",
+    "content": "Hey!\r\nGive it to them\r\nSteve walks warily down the street\r\nWith the brim pulled way down low\r\nAin't no sound but the sound of his feet\r\nMachine guns ready to go\r\nAre you ready, hey, are you ready for this?\r\nAre you standing on the edge of your seat?\r\nOut the doorway the bullets rip\r\nTo the sound of the beat, yeah, yeah, yeah\r\nAnother one bites the dust\r\nSing it (another one bites the dust)\r\nAnd another one gone, and another one gone\r\nAnother one bites the dust\r\nHey, I'm gonna get you too\r\nAnother one bites the dust"
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 4,
+  "fields": {
+    "title": "Alexander Volkanovski coach ‘laughing’ at Ilia Topuria’s confide",
+    "author": 3,
+    "created": "2024-02-13T22:39:02.526Z",
+    "synopsis": "Hard to take a man in a turtleneck sweater too seriously",
+    "content": "Alexander Volkanovski is amused by Ilia Topuria’s confidence ahead of their huge matchup at UFC 298.\r\n\r\nThat’s according to Volkanovski’s famed jiu-jitsu coach, Craig Jones, who appeared on The MMA Hour ahead of Volkanovski’s featherweight title defense against Topuria on Saturday in Anaheim, Calif. Topuria recently changed the information atop his social media accounts to indicate he is 15-0 and a world champion, seemingly calling a win in his upcoming fight to be a foregone conclusion. At times, Topuria has spoken as if he’s already looking past “The Great.”\r\n\r\nJones can only have a chuckle at that thinking.\r\n\r\n“Ilia, I think has a bit of an identity crisis,” Jones said. “He already thinks he’s the champ, he’s already putting it down. He’s born in Germany, raised in Georgia, calls himself the ‘El Matador.’ For me, personally, I spent a summer in Puerto Rico, I don’t consider myself a Boricua, but yeah, generally speaking he’s an interesting guy.”"
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 5,
+  "fields": {
+    "title": "Chael Sonnen roasts Jon Jones over UFC 300 remarks",
+    "author": 4,
+    "created": "2024-02-13T22:39:41.647Z",
+    "synopsis": "There’s a level of stupid that’s really hard to achieve",
+    "content": "Chael Sonnen once again cannot understand what Jon Jones is doing.\r\n\r\nJones revealed last week in an interview with Submission Radio that he was offered — and turned down — an opportunity to headline UFC 300. The reigning UFC heavyweight champion said he did not feel comfortable jumping onto the April 13 mega-event while still working his way back from the torn pectoral muscle he suffered in October 2023.\r\n\r\nFor Sonnen, a three-time UFC title challenger who famously fought Jones in 2013, the revelation was a baffling admission for “Bones” to bring into the public eye — and one Sonnen thinks was born entirely out of Jones’ thirst for attention as he sits on the sidelines.\r\n\r\n“I would just have absolutely no idea what goes through that guy’s head,” Sonnen said on his YouTube channel. “Like, there’s a level of stupid that’s really hard to achieve, right? I mean, it’s hard. And in fairness, I wouldn’t know.\r\n\r\n“When would it be OK for Jon to claim that he was offered a main event at UFC 300? When would that be okay to claim? When he wasn’t. If he was not offered that, if he’s working, if that’s a hustle to get a headline, he did a great job. You have a heavyweight champion of the world who is amongst the best to have ever done it, in any weight class. Heavyweight sucks, so it’s not like a compliment to say, ‘He’s the best heavyweight ever.’ No, man, I’m talking about a real compliment to Jon — just one of the best to ever do it, period. But you have to understand, if no one’s talking about you, then you’re not. It’s not questionable or a maybe — if the world’s not talking about you, you’re not."
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 6,
+  "fields": {
+    "title": "I just want the notch",
+    "author": 1,
+    "created": "2024-02-13T22:40:23.788Z",
+    "synopsis": "Randy Brown describes frustration of chasing Michael Chiesa for a fight",
+    "content": "Randy Brown ran into UFC commentator and top 15 welterweight Michael Chiesa in the halls of UFC APEX this past Saturday at UFC Vegas 85.\r\n\r\nChiesa was working the desk for the ESPN+ event, while Brown was fighting on it – and fighting very well, if a blistering first-round knockout of Muslim Salikhov was any indication.\r\n\r\nBrown’s respect for Chiesa reached back to his days as an amateur MMA fighter watching The Ultimate Fighter 15, which Chiesa won decisively. But those warm feelings had cooled as he’d sought to climb the welterweight rankings with a fight.\r\n\r\n“I was just like, ‘Bro, what’s up, man? What are we doing? What are we really doing?’” Brown said Wednesday on The MMA Hour. “Just tell me you’re not interested yourself so I can just f*** off, because I’m not bullying you or nothing. I don’t want to pick on you.\r\n\r\n“I’m down to fight anybody, but I think that we make for a good fight, and I truly have a ton of respect for dude. I think that the dude is a legend in his own right, because he’s been around for so long.”\r\n\r\nChiesa did not respond to a request for comment by MMA Fighting."
+  }
+}
+]

@@ -1,0 +1,19 @@
+{% extends "blog/base.html" %}
+
+{% block content %}
+{% if messages %}
+    {% for message in messages %}
+        <div>{{ message }}</div>
+    {% endfor %}
+    <br />
+{% endif %}
+<h1>{{ article.title }}</h1>
+<p>by {{ article.author }} at {{ article.created }}</p>
+<p>{{ article.synopsis }}</p>
+<p>{{ article.content|linebreaks }}</p>
+<br />
+<form method="post" action="{% url 'blog:addToFavourite' article.id %}">
+{% csrf_token %}
+<button type="submit">Add to Favourite</button>
+</form>
+{% endblock %}

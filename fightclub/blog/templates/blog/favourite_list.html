@@ -1,0 +1,20 @@
+{% extends "blog/base.html" %}
+
+{% block content %}
+<table>
+    <tr>
+        <th>Title</th>
+        <th>Synopsis</th>
+        <th>At</th>
+        <th>Link</th>
+    </tr>
+    {% for a in articles %}
+    <tr>
+        <td>{{ a.article.title }}</td>
+        <td>{{ a.article.synopsis }}</td>
+        <td>{{ a.article.created }}</td>
+        <td><a href="{% url 'blog:article' a.article.id %}">See</a></td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

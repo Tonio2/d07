@@ -36,3 +36,9 @@ To get started with this project, follow these steps:
    python manage.py migrate
    python manage.py runserver
    ```
+4. **DB Initialization**
+   ```bash
+   python manage.py loaddata users_fixture.json
+   python manage.py loaddata articles_fixture.json
+   python manage.py loaddata favourite_fixture.json
+   ```

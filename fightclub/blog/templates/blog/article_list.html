@@ -11,19 +11,17 @@ Hello {{ request.user.username }}!
         <th>At</th>
         <th>Synopsis</th>
         <th>Link</th>
+        <th>Published</th>
     </tr>
-    {% for a in article_list %}
+    {% for a in article_list|dictsortreversed:"created" %}
     <tr>
         <td>{{ a.title }}</td>
         <td>{{ a.author }}</td>
         <td>{{ a.created }}</td>
-        <td>{{ a.synopsis }}</td>
+        <td>{{ a.synopsis|truncatechars:20 }}</td>
         <td><a href="{% url 'blog:article' a.id %}">See</a></td>
+        <td>{{ a.created|timesince }}</td>
     </tr>
     {% endfor %}
 </table>
-<form method="post" action="{% url 'blog:logout' %}">
-    {% csrf_token %}
-    <input type="submit" value="logout">
-</form>
 {% endblock %}

@@ -1,11 +1,124 @@
 <!doctype html>
 <html lang="en-US">
-  <head>
-    <meta charset="utf-8" />
-    <title>My test page</title>
-  </head>
-  <body>
-    {% block content %}{% endblock %}
-  </body>
-</html>
 
+<head>
+  <meta charset="utf-8" />
+  <title>My test page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    nav {
+      background-color: #f2f2f2;
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .navEl {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    .navEl a {
+      text-decoration: none;
+      color: #333;
+    }
+
+    .navEl a:hover {
+      color: #007bff;
+    }
+
+    form {
+      display: inline-block;
+    }
+
+    input[type="submit"] {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      margin-bottom: 10px;
+      padding: 5px;
+      border: 1px solid #ddd;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    th,
+    td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    tr:hover {
+      background-color: #f1f1f1;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class="navEl"><a href="{% url 'blog:home' %}">Home</a></div>
+    <div class="navEl"><a href="{% url 'blog:articles' %}">Last Articles</a></div>
+    {% if request.user.is_authenticated %}
+    <div class="navEl"><a href="{% url 'blog:favourites' %}">Favourites</a></div>
+    <div class="navEl"><a href="{% url 'blog:pub' %}">Publications</a></div>
+    <div class="navEl">
+      <form method="post" action="{% url 'blog:logout' %}">
+        {% csrf_token %}
+        <input type="submit" value="logout">
+      </form>
+
+    </div>
+    {% else %}
+    <div class="navEl"><a href="{% url 'blog:signup' %}">Register</a></div>
+    <div class="navEl">
+      <form method="post" action="{% url 'blog:login' %}">
+        {% csrf_token %}
+        <div>
+          <label for="id_username">Username:</label>
+          <input type="text" name="username" autofocus autocapitalize="none" autocomplete="username" maxlength="150"
+            required id="id_username">
+        </div>
+        <div>
+          <label for="id_password">Password:</label>
+          <input type="password" name="password" autocomplete="current-password" required id="id_password">
+        </div>
+        <input type="submit" value="login">
+      </form>
+      {% endif %}
+    </div>
+  </nav>
+  {% block content %}{% endblock %}
+</body>
+
+</html>

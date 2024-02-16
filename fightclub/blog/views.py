@@ -62,6 +62,11 @@ class SignupView(generic.edit.CreateView):
     template_name = "blog/signup.html"
     form_class = UserCreationForm
 
+    def dispatch(self, request, *args, **kwargs):
+        if self.request.user.is_authenticated:
+            return redirect('blog:home')
+        return super().dispatch(request, *args, **kwargs)
+
     def form_valid(self, form):
         res = super().form_valid(form)
         login(self.request, form.instance)

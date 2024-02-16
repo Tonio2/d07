@@ -4,13 +4,14 @@
 
 The FightClub Django Blog project is a comprehensive exploration of advanced Django features through a series of exercises that cumulatively build a fully functional blog. Key features implemented in this project include:
 
-- Model Construction: Setting up the basic models for the application, such as articles and user favorites.
-- Generic Class-Based Views: Utilization of Django's generic views for efficient and modular code.
-- User Authentication: Implementing user login, registration, and logout functionalities.
-- Article and Favorites Management: Enabling users to publish articles and save favorites.
-- Template Tags and Filters: Customization of the display of information using Django's template system.
-- Internationalization: Making the site multilingual, primarily focusing on English and French.
-- Testing with Django's Framework: Ensuring reliability and functionality through Django's built-in testing tools.
+- **Model Construction:** Setting up the basic models for the application, such as articles and user favorites.
+- **Generic Class-Based Views:** Utilization of Django's generic views for efficient and modular code.
+- **User Authentication:** Implementing user login, registration, and logout functionalities.
+- **Article and Favorites Management:** Enabling users to publish articles and save favorites.
+- **Template Tags and Filters:** Customization of the display of information using Django's template system.
+- **Bootstrap Integration:** Styling the site using Bootstrap for a professional look.
+- **Internationalization:** Making the site multilingual, primarily focusing on English and French.
+- **Testing with Django's Framework:** Ensuring reliability and functionality through Django's built-in testing tools.
 
 This project serves as a robust example of a Django web application
 
